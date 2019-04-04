@@ -1,8 +1,8 @@
-package com.company.commandpattern.ConcreteCommand;
+package com.commanddesignpattern.command.impl;
 
 
-import com.company.commandpattern.Command.Command;
-import com.company.commandpattern.receiver.Account;
+import com.commanddesignpattern.command.Command;
+import com.commanddesignpattern.receiver.Account;
 
 /**
  * 定义一个接收者和行为之间的弱耦合；实现execute()方法，负责调用接收者的相应操作。execute()方法通常叫做执行方法。

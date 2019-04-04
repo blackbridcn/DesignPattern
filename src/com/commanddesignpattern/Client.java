@@ -1,11 +1,11 @@
-package com.company.commandpattern.Client;
+package com.commanddesignpattern;
 
 
-import com.company.commandpattern.Command.Command;
-import com.company.commandpattern.ConcreteCommand.AccountInCommand;
-import com.company.commandpattern.ConcreteCommand.AccountOutCommand;
-import com.company.commandpattern.Invoker.Invoker;
-import com.company.commandpattern.receiver.Account;
+import com.commanddesignpattern.command.Command;
+import com.commanddesignpattern.command.impl.AccountInCommand;
+import com.commanddesignpattern.command.impl.AccountOutCommand;
+import com.commanddesignpattern.invoker.Invoker;
+import com.commanddesignpattern.receiver.Account;
 
 public class Client {
 

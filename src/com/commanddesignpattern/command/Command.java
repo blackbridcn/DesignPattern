@@ -1,7 +1,7 @@
-package com.company.commandpattern.Command;
+package com.commanddesignpattern.command;
 
 
-import com.company.commandpattern.receiver.Account;
+import com.commanddesignpattern.receiver.Account;
 
 public abstract class Command {
     // 账户类

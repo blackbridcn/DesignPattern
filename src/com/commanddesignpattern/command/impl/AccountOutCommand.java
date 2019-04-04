@@ -1,8 +1,8 @@
-package com.company.commandpattern.ConcreteCommand;
+package com.commanddesignpattern.command.impl;
 
 
-import com.company.commandpattern.Command.Command;
-import com.company.commandpattern.receiver.Account;
+import com.commanddesignpattern.command.Command;
+import com.commanddesignpattern.receiver.Account;
 
 /**
  * ConcreteCommand取钱：
