@@ -1,9 +1,9 @@
-package com.proxydesignpattern;
+package com.proxy;
 
-import com.proxydesignpattern.dynamicproxy.DynamicProxySubject;
-import com.proxydesignpattern.staticproxy.HolderProxySubject;
-import com.proxydesignpattern.subject.Subject;
-import com.proxydesignpattern.subject.impl.TimeTaskSubject;
+import com.proxy.dynamicproxy.DynamicProxySubject;
+import com.proxy.staticproxy.HolderProxySubject;
+import com.proxy.subject.Subject;
+import com.proxy.subject.impl.TimeTaskSubject;
 
 public class Clien {
 

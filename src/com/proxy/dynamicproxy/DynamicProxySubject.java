@@ -1,6 +1,4 @@
-package com.proxydesignpattern.dynamicproxy;
-
-import com.proxydesignpattern.subject.Subject;
+package com.proxy.dynamicproxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -10,7 +8,7 @@ public class DynamicProxySubject implements InvocationHandler {
 
     private Object target;
 
-    public Object Bind(Object target) {
+    public  Object Bind(Object target) {
         this.target = target;
         return Proxy.newProxyInstance(this.target.getClass().getClassLoader(), this.target.getClass().getInterfaces(), this);
     }

@@ -1,4 +1,4 @@
-package com.commanddesignpattern.receiver;
+package com.command.receiver;
 
 import java.util.ArrayList;
 import java.util.List;

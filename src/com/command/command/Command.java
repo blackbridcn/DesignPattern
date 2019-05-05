@@ -1,14 +1,13 @@
-package com.commanddesignpattern.command;
+package com.command.command;
 
 
-import com.commanddesignpattern.receiver.Account;
+import com.command.receiver.Account;
 
 public abstract class Command {
     // 账户类
     protected Account account;
 
-    public Command(Account account)
-    {
+    public Command(Account account){
         this.account = account;
     }
 

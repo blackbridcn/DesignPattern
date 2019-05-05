@@ -1,11 +1,13 @@
-package com.commanddesignpattern.command.impl;
+package com.command.command.impl;
 
 
-import com.commanddesignpattern.command.Command;
-import com.commanddesignpattern.receiver.Account;
+import com.command.command.Command;
+import com.command.receiver.Account;
 
 /**
- * 定义一个接收者和行为之间的弱耦合；实现execute()方法，负责调用接收者的相应操作。execute()方法通常叫做执行方法。
+ * 定义一个接收者和行为之间的弱耦合；实现execute()方法，
+ * 负责调用接收者的相应操作。
+ * execute()方法通常叫做执行方法。
  *
  * 然后定义ConcreteCommand类，这里只定义存钱和取钱：
  */

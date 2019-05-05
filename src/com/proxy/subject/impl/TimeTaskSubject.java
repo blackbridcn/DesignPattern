@@ -1,6 +1,6 @@
-package com.proxydesignpattern.subject.impl;
+package com.proxy.subject.impl;
 
-import com.proxydesignpattern.subject.Subject;
+import com.proxy.subject.Subject;
 
 public class TimeTaskSubject implements Subject {
 

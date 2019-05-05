@@ -1,11 +1,11 @@
-package com.commanddesignpattern;
+package com.command;
 
 
-import com.commanddesignpattern.command.Command;
-import com.commanddesignpattern.command.impl.AccountInCommand;
-import com.commanddesignpattern.command.impl.AccountOutCommand;
-import com.commanddesignpattern.invoker.Invoker;
-import com.commanddesignpattern.receiver.Account;
+import com.command.command.Command;
+import com.command.command.impl.AccountInCommand;
+import com.command.command.impl.AccountOutCommand;
+import com.command.invoker.Invoker;
+import com.command.receiver.Account;
 
 public class Client {
 
@@ -19,6 +19,7 @@ public class Client {
 
         // 存200块钱
         Command commandIn = new AccountInCommand(account,200);
+
         // 创建一个调度者
         Invoker invoker0 = new Invoker(commandIn);
         // 告诉调度者我要存钱

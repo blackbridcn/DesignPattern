@@ -1,7 +1,7 @@
-package com.commanddesignpattern.invoker;
+package com.command.invoker;
 
 
-import com.commanddesignpattern.command.Command;
+import com.command.command.Command;
 
 /**
  * 负责调用命令对象执行请求，相关的方法叫做行动方法。

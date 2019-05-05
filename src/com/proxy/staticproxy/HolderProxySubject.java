@@ -1,6 +1,6 @@
-package com.proxydesignpattern.staticproxy;
+package com.proxy.staticproxy;
 
-import com.proxydesignpattern.subject.Subject;
+import com.proxy.subject.Subject;
 
 public class HolderProxySubject implements Subject {
 
