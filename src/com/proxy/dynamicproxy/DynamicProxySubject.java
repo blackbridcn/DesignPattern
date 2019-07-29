@@ -17,7 +17,7 @@ public class DynamicProxySubject implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("动态代理START---->");
         Object invoke = method.invoke(this.target, args);
-        System.out.println("动态代理END---->");
+      //  System.out.println("动态代理END----> "+invoke.getClass().getName());
         return invoke;
     }
 }

@@ -1,12 +1,20 @@
 package com.proxy.subject.impl;
 
 import com.proxy.subject.Subject;
+import com.proxy.subject.help.DynamicProxyParams;
 
 public class TimeTaskSubject implements Subject {
 
-    @Override
+  /*  @Override
     public void doSomeThing() {
         System.out.println("TimeTaskSubject doSomeThing------------------->");
+    }*/
+
+    @Override
+    public void doSomeThing(DynamicProxyParams dynamicProxyParams) {
+      boolean id=  dynamicProxyParams.onDynamicProxyParams();
+        System.out.println("TimeTaskSubject doSomeThing(int id)-------------------> dynamicProxyParams :" + id);
+
     }
 
     @Override

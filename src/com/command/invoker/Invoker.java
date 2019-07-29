@@ -24,4 +24,8 @@ public class Invoker {
         command.action();
     }
 
+    public void recallCommand(){
+
+    }
+
 }

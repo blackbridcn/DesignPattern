@@ -1,6 +1,7 @@
 package com.proxy.staticproxy;
 
 import com.proxy.subject.Subject;
+import com.proxy.subject.help.DynamicProxyParams;
 
 public class HolderProxySubject implements Subject {
 
@@ -10,24 +11,23 @@ public class HolderProxySubject implements Subject {
         this.mSubject = mSubject;
     }
 
+
     @Override
-    public void doSomeThing() {
-        if(this.mSubject!=null){
-            this.mSubject.doSomeThing();
-        }
+    public void doSomeThing(DynamicProxyParams dynamicProxyParams) {
+        dynamicProxyParams.onDynamicProxyParams();
     }
 
     @Override
     public void doSomeThing(int id) {
-        if(this.mSubject!=null){
+        if (this.mSubject != null) {
             this.mSubject.doSomeThing(id);
         }
     }
 
     @Override
     public void doSomeTask(int id, String name) {
-        if(this.mSubject!=null){
-            this.mSubject.doSomeTask(id,name);
+        if (this.mSubject != null) {
+            this.mSubject.doSomeTask(id, name);
         }
     }
 }
